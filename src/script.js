@@ -1,4 +1,21 @@
 function send_data() {
+    /*
+    msg error - fild not fill
+    Please fill in all fields.
+
+    msg error - card numbers
+    Please verify the card numbers.
+
+    msg error - data exp.
+    Please correct the expiration date.
+    */
+
+    
+
+
+
+
+
   //the card number
   let tcard_num = document.querySelector("input#icard_number");
   let spc1 = document.querySelector("div.spc1");

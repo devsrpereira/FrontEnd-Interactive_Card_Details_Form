@@ -42,13 +42,16 @@
         <form class="form1" action="" method="post">
             <label for="iholder_name">CARDHOLDER NAME</label><br>
             <input type="text" name="holder_name" id="iholder_name" placeholder="e.g. Jane Appleseed" maxlength=25>
+            <span class="erro_1">Please fill in all fields.</span>
             <br>
+            
 
-            <label for="icard_number">CARD NUMBER</label>
+            <label class="labels" for="icard_number">CARD NUMBER</label>
             <br>
 
             <input id="icard_number" class="card" type="text" maxlength="16" pattern="([0-9]{3})"
                 placeholder="e.g. 1234 5678 9123 0000" name="field" />
+            <span class="erro_2">teste</span>    
             <br>
 
             <label for="imm_exp">EXP. DATE (MM/YY)</label>
@@ -58,6 +61,11 @@
             <input id="imm_exp" class="mm_exp" type="text" maxlength="2" pattern="([0-9]{3})" placeholder="MM">
             <input id="iyy_exp" class="yy_exp" type="text" maxlength="2" pattern="([0-9]{3})" placeholder="YY">
             <input id="icvc" class="cvc" type="text" maxlength="3" pattern="([0-9]{3})" placeholder="e.g.123">
+            
+            <div class="div_error">
+                <span class="erro_3">teste</span>
+                <span class="erro_4">teste</span>
+            </div>
             <br>
 
             <input type="submit" name="confirm" id="iconfirm" value="Confirm" onclick="send_data()">
