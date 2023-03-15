@@ -238,3 +238,7 @@ button{
     color: #fff;
     font-family: 'Space Grotesk', sans-serif;
 }
+
+.error_msg{
+    color: #ff5252;
+}
