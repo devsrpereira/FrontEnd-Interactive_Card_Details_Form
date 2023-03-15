@@ -11,7 +11,53 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <main>
+        <div class="purple_box">
+            <div class="back_card">
+                <div class="bck1">000</div>
+            </div>
+            <div class="front_card">
+                <div class="white_circle"></div>
+                <div class="small_circle"></div>
+                <div class="card_number">
+                    <div class="spc1">0000</div>
+                    <div class="spc2">0000</div>
+                    <div class="spc3">0000</div>
+                    <div class="spc4">0000</div>
+                </div>
+                <div class="card_name">
+                    JANE APPLESEED
+                </div>
+                <div class="exp">
+                    00/00
+                </div>
+            </div>
+        </div>
+        <form action="#" method="post">
+            <label for="iholder_name">CARDHOLDER NAME</label><br>
+            <input type="text" name="holder_name" id="iholder_name" placeholder="e.g. Jane Appleseed">
+            <br>
+
+            <label for="icard_number">CARD NUMBER</label>
+            <br>
+
+            <input type="number" name="card_number" id="icard_number" minlength="18" maxlength="18" placeholder="e.g. 1234 5678 9123 0000" >
+            <br>
+
+            <label for="imm_exp">EXP. DATE (MM/YY)</label>
+            <label for="icvc">CVC</label>
+            <br>
+
+            <input type="text" name="mm_exp" id="imm_exp" placeholder="MM" maxlength="2">
+            <input type="text" name="yy_exp" id="iyy_exp"placeholder="YY" maxlength="2">
+            <input type="number" name="cvc" id="icvc" placeholder="e.g.123" maxlength="3">
+            <br>
+
+            <input type="submit" name="confirm" id="iconfirm" value="Confirm">
+
+        </form>
+        
+    </main>
 
     
 

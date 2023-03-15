@@ -1,0 +1,184 @@
+@charset "UTF-08";
+
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 11px
+}
+
+:root{
+    --cor01: hsl(228, 45%, 44%);
+}
+body, html{
+    display: flex;
+    justify-content: center;
+    font-family: 'Space Grotesk', sans-serif;
+}
+main{
+
+    border: 1px solid black;
+
+    width: 375px;
+    height: 703px;
+}
+.purple_box{
+    background-image: url(../images/bg-main-mobile.png); 
+    width: 375px;
+    height: 240px;
+}
+.back_card{
+    background-image: url(../images/bg-card-back.png);
+    background-size:cover;
+    border-radius: 10px;
+    width: 285px;
+    height: 158px;
+
+    position: absolute;
+    top: 32px;
+    left: 50%;
+    transform: translateX(-40%);
+}
+.bck1{
+    position: absolute ;
+    top: 70px;
+    left: 82%;
+    width: 25px;
+    height: 15px;
+    color: white;
+}
+.front_card{
+    background-image: url(../images/bg-card-front.png);
+    background-size:cover;
+    border-radius: 10px;
+    width: 285px;
+    height: 158px;
+
+    position: relative;
+    top: 120px;
+    left: 16px;
+    
+}
+.white_circle{
+    position: relative ;
+    width: 30px;
+    height: 30px;
+    border-radius: 100% ;
+    background-color: white;
+    top: 18px;
+    left: 20px;
+}
+.small_circle{
+    position: relative ;
+    width: 12px;
+    height: 12px;
+    border-radius: 100% ;
+    border: 2px solid white;
+    top: -3px;
+    left: 60px;
+}
+.card_number{
+    display: flex;
+    position: relative ;
+    width: 235px;
+    height: 22px;
+    left: 25px;
+    top: 40px;
+
+    justify-content: space-between;
+    align-items: center;
+}
+.spc1{
+    text-align: justify;
+    font-size: 20px;
+    color: white;
+}
+.spc2{
+    text-align: justify;
+    font-size: 20px;
+    color: white;
+}
+.spc3{
+    text-align: justify;
+    font-size: 20px;
+    color: white;
+}
+.spc4{
+    text-align: justify;
+    font-size: 20px;
+    color: white;
+}
+.card_name{
+    position: relative ;
+    width: 200px;
+    height: 10px;
+    left: 25px;
+    top: 60px;
+    color: WHITE;    
+}
+.exp{
+    position: relative ;
+    width: 32px;
+    height: 10px;
+    left: 225px;
+    top: 50px;
+    color: white;
+}
+
+form{
+    position: relative;
+    margin: 90px 20px 40px 20px;
+}
+label{
+    font-size: 13px;
+    color: #3e3643;
+    text-shadow: .5px .5px 1px #ee82ee69;
+    letter-spacing: 0.1em;
+    font-weight: bolder;
+    margin-right: 17px;
+    
+}
+#iholder_name, #icard_number{
+    width: calc(100% - 20px);
+    
+    border: 1px solid #d5d2d2c7;
+    border-radius: 10px;
+    font-size: 18px;
+    padding: 15px 10px;
+
+    margin: 10px 0 20px 0;
+}
+::placeholder{
+    color: #bcb9b9c1;
+    font-family: 'Space Grotesk', sans-serif;
+
+}
+#imm_exp, #iyy_exp{
+    width: 60px;
+    border: 1px solid #d5d2d2c7;
+    border-radius: 10px;
+    font-size: 18px;
+    padding: 15px 0;
+    text-align: center;
+    margin-right: 7px;
+    margin: 10px 7px 20px 0;
+}
+#icvc{
+    width: 165px;
+    border: 1px solid #d5d2d2c7;
+    border-radius: 10px;
+    font-size: 18px;
+    padding: 15px 0 15px 10px;
+    margin-right: 7px;
+    margin: 10px 0px 20px 15px;
+}
+#iconfirm{
+    font-size: 18px;
+    padding: 15px 0px;
+    width: 100%;
+    border-radius: 10px;
+    background-color: #220930;
+    color: #fff;
+    font-family: 'Space Grotesk', sans-serif;
+}
