@@ -2,6 +2,8 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap');
 
+
+
 *{
     margin: 0;
     padding: 0;
@@ -9,7 +11,9 @@
 }
 
 :root{
-    --cor01: hsl(228, 45%, 44%);
+    --cor01: #3e52a3;
+    --cor02: #6448fe;
+    --cor03: #600594;
 }
 body, html{
     display: flex;
@@ -130,6 +134,9 @@ form{
     position: relative;
     margin: 90px 20px 40px 20px;
 }
+input{
+    cursor: pointer;
+}
 label{
     font-size: 13px;
     color: #3e3643;
@@ -177,6 +184,55 @@ label{
     font-size: 18px;
     padding: 15px 0px;
     width: 100%;
+    border-radius: 10px;
+    background-color: #220930;
+    color: #fff;
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+aside{
+    display: none;
+
+    background-color: white;
+    position: absolute;
+    top: 300px;
+    width: 337px;
+    height: 380px;
+    margin: 20px;
+    text-align: center;
+}
+.circle_check{
+    display: flex;
+    background-image: linear-gradient(var(--cor02), var(--cor03));
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin: auto;
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+}
+h1{
+    text-align: center;
+    margin-top: 40px;
+    font-size: 27px;
+    letter-spacing: .2em;
+    font-weight: 600;
+    color: #3d1256;
+}
+p{
+    text-align: center;
+    margin-top: 18px;
+    color: #949393;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 18px;
+}
+button{
+    margin-top: 50px;
+    font-size: 18px;
+    padding: 14px 0px;
+    
+    width: 280px;
     border-radius: 10px;
     background-color: #220930;
     color: #fff;
