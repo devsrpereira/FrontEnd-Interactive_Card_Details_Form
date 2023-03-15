@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,8 +11,11 @@
 
     <link rel="stylesheet" href="style.css">
 
-   
+    <script src="https://code.jquery.com/jquery-3.6.3.js"></script>
+    <script src="../src/script.js"></script>
+
 </head>
+
 <body>
     <main>
         <div class="purple_box">
@@ -35,27 +39,28 @@
                 </div>
             </div>
         </div>
-        <form action="#" method="post">
+        <form class="form1" action="" method="post">
             <label for="iholder_name">CARDHOLDER NAME</label><br>
-            <input type="text" name="holder_name" id="iholder_name" placeholder="e.g. Jane Appleseed" maxlength="32" required>
+            <input type="text" name="holder_name" id="iholder_name" placeholder="e.g. Jane Appleseed" maxlength=25>
             <br>
 
             <label for="icard_number">CARD NUMBER</label>
             <br>
 
-            <input type="number" name="card_number" id="icard_number" minlength="16" maxlength="16" placeholder="e.g. 1234 5678 9123 0000" required>
+            <input id="icard_number" class="card" type="text" maxlength="16" pattern="([0-9]{3})"
+                placeholder="e.g. 1234 5678 9123 0000" name="field" />
             <br>
 
             <label for="imm_exp">EXP. DATE (MM/YY)</label>
             <label for="icvc">CVC</label>
             <br>
 
-            <input type="number" name="mm_exp" id="imm_exp" placeholder="MM" maxlength="2" required>
-            <input type="number" name="yy_exp" id="iyy_exp"placeholder="YY" maxlength="2" required>
-            <input type="number" name="cvc" id="icvc" placeholder="e.g.123" maxlength="3"required>
+            <input id="imm_exp" class="mm_exp" type="text" maxlength="2" pattern="([0-9]{3})" placeholder="MM">
+            <input id="iyy_exp" class="yy_exp" type="text" maxlength="2" pattern="([0-9]{3})" placeholder="YY">
+            <input id="icvc" class="cvc" type="text" maxlength="3" pattern="([0-9]{3})" placeholder="e.g.123">
             <br>
 
-            <input type="submit" name="confirm" id="iconfirm" value="Confirm" onclick="confirm()">
+            <input type="submit" name="confirm" id="iconfirm" value="Confirm" onclick="send_data()">
         </form>
         <aside class="tks">
             <div class="circle_check">
@@ -63,10 +68,33 @@
             </div>
             <h1>THANK YOU!</h1>
             <p>We've added your card details</p>
-            <button>Continue</button>
+            <button onclick="new_card()">Continue</button>
         </aside>
     </main>
 
-    <script src="../src/script.js"></script>  
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#icard_number").keyup(function () {
+                $("#icard_number").val(this.value.match(/[0-9]*/));
+            });
+        });
+        $(document).ready(function () {
+            $("#imm_exp").keyup(function () {
+                $("#imm_exp").val(this.value.match(/[0-9]*/));
+            });
+        });
+        $(document).ready(function () {
+            $("#iyy_exp").keyup(function () {
+                $("#iyy_exp").val(this.value.match(/[0-9]*/));
+            });
+        }); 
+        $(document).ready(function () {
+            $("#icvc").keyup(function () {
+                $("#icvc").val(this.value.match(/[0-9]*/));
+            });
+        });
+    </script>
+
 </body>
+
 </html>

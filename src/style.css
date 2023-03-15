@@ -92,6 +92,7 @@ main{
 
     justify-content: space-between;
     align-items: center;
+    letter-spacing: 1px;
 }
 .spc1{
     text-align: justify;
@@ -237,7 +238,11 @@ button{
     background-color: #220930;
     color: #fff;
     font-family: 'Space Grotesk', sans-serif;
+    cursor: pointer;
 }
+
+
+
 
 .error_msg{
     color: #ff5252;
