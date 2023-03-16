@@ -141,11 +141,15 @@ form{
     font-family: 'Space Grotesk', sans-serif;
 }
 span{
-    display: block;
+    display: none;
 
     padding-left: 10px;   
     color: var(--cor04);
-    margin-top: -20px;
+    margin-top: -18px;
+}
+.erro_4, .erro_3{
+    padding-right: 15px;
+    margin-top: -10px;
 }
 .div_error{
     display: flex;
@@ -172,7 +176,7 @@ label{
     font-size: 18px;
     padding: 15px 10px;
 
-    margin: 10px 0 20px 0;
+    margin: 10px 0 17px 0;
 }
 
 #imm_exp, #iyy_exp{
@@ -183,7 +187,7 @@ label{
     padding: 15px 0;
     text-align: center;
     margin-right: 7px;
-    margin: 10px 7px 20px 0;
+    margin: 10px 7px 8px 0;
 }
 #icvc{
     width: 165px;
@@ -192,7 +196,7 @@ label{
     font-size: 18px;
     padding: 15px 0 15px 10px;
     margin-right: 7px;
-    margin: 10px 0px 20px 15px;
+    margin: 10px 0px 8px 15px;
 }
 #iconfirm{
     font-size: 18px;
